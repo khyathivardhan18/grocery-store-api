@@ -23,10 +23,17 @@
 
 ```mermaid
 graph TD
-    A[Frontend (Web/Mobile)] -->|REST API| B(Spring Boot App)
-    B --> C[MySQL Database]
-    B --> D[Admin Dashboard]
-    B --> E[Customer App]
+    A[Frontend (Web/Mobile)] -->|REST API| G[API Gateway]
+    G -->|Routes Requests| B[Spring Boot App]
+    B -->|REST Controllers| C[Controllers]
+    C -->|Business Logic| D[Services]
+    D -->|Data Access| E[Repositories]
+    E -->|JPA/Hibernate| F[MySQL Database]
+    B --> H[Admin Dashboard]
+    B --> I[Customer App]
+    D --> J[External Integrations]
+    J --> K[Payment Gateway]
+    J --> L[Email Service]
 ```
 
 A full-featured RESTful API for managing a grocery store, built with Java, Spring Boot, JPA, and MySQL. This project demonstrates entity relationships, CRUD operations, and RESTful design, making it a great portfolio or resume project.
