@@ -2,6 +2,19 @@
 
 A full-featured RESTful API for managing a grocery store, built with Java, Spring Boot, JPA, and MySQL. This project demonstrates entity relationships, CRUD operations, and RESTful design, making it a great portfolio or resume project.
 
+## Table of Contents
+- [Project Purpose](#project-purpose--what-is-this-api-for)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [API Endpoints](#api-endpoints)
+- [API Response Examples](#api-response-examples)
+- [Error Handling](#error-handling)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
 ## Project Purpose / What is this API for?
 This API is the backend for a grocery store management system. It allows you to:
 - Manage products, categories, customers, orders, and order items
@@ -79,20 +92,87 @@ The API will be available at `http://localhost:8080`.
 - `PUT    /order-items/{id}`
 - `DELETE /order-items/{id}`
 
-## Example: Create a Product
-```bash
-curl -X POST http://localhost:8080/products \
-  -H 'Content-Type: application/json' \
-  -d '{"name": "Milk", "price": 2.49, "description": "Fresh milk", "category": {"id": 1}, "stockQuantity": 100}'
+## API Response Examples
+
+### Example: Get All Products
+
+**Request:**
+```
+GET /products
 ```
 
-## Example: List All Products
-```bash
-curl http://localhost:8080/products
+**Response:**
+```json
+[
+  {
+    "id": 1,
+    "name": "Milk",
+    "price": 2.49,
+    "description": "Fresh milk",
+    "category": {
+      "id": 1,
+      "name": "Dairy"
+    },
+    "stockQuantity": 100
+  }
+]
 ```
+
+### Example: Error Response
+
+**Request:**
+```
+GET /categories/999
+```
+
+**Response:**
+```json
+{
+  "timestamp": "2025-06-08T03:03:58.679+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/categories/999"
+}
+```
+
+## Error Handling
+
+The API uses standard HTTP status codes to indicate success or failure.
+
+- `200 OK` – Successful request
+- `201 Created` – Resource created
+- `400 Bad Request` – Invalid input
+- `404 Not Found` – Resource not found
+- `500 Internal Server Error` – Server error
+
+## Project Structure
+
+- `src/main/java/com/grocerystore/` – Main Java source code
+  - `controller/` – REST controllers
+  - `model/` – Entity classes
+  - `repository/` – JPA repositories
+  - `config/` – Configuration and data initialization
+- `src/main/resources/`
+  - `application.properties` – App configuration
+  - `schema.sql` – Database schema
+- `README.md` – Project documentation
+- `pom.xml` – Maven build file
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes
+4. Push to your fork and submit a pull request
 
 ## License
 MIT
+
+## Contact
+
+For questions or support, open an issue or contact vardhaninturi@gmail.com.
 
 ## Sample application.properties for MySQL
 ```properties
