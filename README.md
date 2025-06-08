@@ -1,5 +1,34 @@
 # Grocery Store API
 
+![Java](https://img.shields.io/badge/Java-17-blue.svg)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.3-brightgreen)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+## Quick Start
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/khyathivardhan18/grocery-store-api.git
+   cd grocery-store-api
+   ```
+2. Make sure MySQL is running and update your credentials in `src/main/resources/application.properties`.
+3. Run the application:
+   ```bash
+   mvn spring-boot:run
+   ```
+4. Access the API at [http://localhost:8080](http://localhost:8080)
+
+## Architecture Diagram
+
+```mermaid
+graph TD
+    A[Frontend (Web/Mobile)] -->|REST API| B(Spring Boot App)
+    B --> C[MySQL Database]
+    B --> D[Admin Dashboard]
+    B --> E[Customer App]
+```
+
 A full-featured RESTful API for managing a grocery store, built with Java, Spring Boot, JPA, and MySQL. This project demonstrates entity relationships, CRUD operations, and RESTful design, making it a great portfolio or resume project.
 
 ## Table of Contents
