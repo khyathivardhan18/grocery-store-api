@@ -23,7 +23,7 @@
 
 ![Architecture Diagram](docs/IMG_4486.jpeg)
 
-A full-featured RESTful API for managing a grocery store, built with Java, Spring Boot, JPA, and MySQL. This project demonstrates entity relationships, CRUD operations, and RESTful design, making it a great portfolio or resume project.
+A full-featured RESTful API for managing a grocery store, built with Java, Spring Boot, JPA, and MySQL. This project demonstrates entity relationships, CRUD operations, and RESTful design.
 
 ## Table of Contents
 - [Project Purpose](#project-purpose--what-is-this-api-for)
