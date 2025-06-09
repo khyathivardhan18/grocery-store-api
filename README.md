@@ -301,7 +301,7 @@ The API will be available at `http://localhost:8080`.
 
 ## License
 
-MIT — you can use this code for free, even in commercial projects.
+MIT 
 
 For questions or support, open an issue or contact khyathivardhan18@gmail.com.
 =======
