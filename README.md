@@ -195,7 +195,7 @@ MIT
 
 ## Contact
 
-For questions or support, open an issue or contact vardhaninturi@gmail.com.
+For questions or support, open an issue or contact khyathivardhan18@gmail.com.
 
 ## Sample application.properties for MySQL
 ```properties
