@@ -1,0 +1,8 @@
+pring.datasource.url=jdbc:mysql://localhost:3306/grocery_store
+spring.datasource.username=root
+spring.datasource.password=anilkumar123
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
