@@ -1,9 +1,62 @@
 # Grocery Store API
 
-![Java](https://img.shields.io/badge/Java-17-blue.svg)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.3-brightgreen)
-![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Build](https://img.shields.io/badge/build-passing-brightgreen)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+
+A modern, scalable REST API for managing a grocery store, built with Java Spring Boot and MySQL.
+
+---
+
+## 🚀 Features
+- Product, category, customer, and order management
+- Secure RESTful endpoints
+- Admin and customer modules
+- MySQL database integration
+- Extensible service layer for business logic
+- Ready for payment and email integrations
+
+## 🏗️ Architecture
+
+The following diagram illustrates the high-level architecture of the Grocery Store API MVP:
+
+<p align="center">
+  <img src="docs/IMG_4486.jpeg" alt="System Architecture Diagram" width="600"/>
+</p>
+
+**Key Components:**
+- **Frontend Web/Mobile:** User interfaces for customers and admins.
+- **API Gateway:** Routes REST API requests to the backend.
+- **Spring Boot App:** Core backend logic, split into controllers, services, and repositories.
+- **Admin Dashboard & Customer App:** Separate modules for different user roles.
+- **Services:** Business logic, data access, and external integrations (payment, email).
+- **MySQL Database:** Persistent storage for all entities.
+
+## 🛠️ Tech Stack
+- Java 17, Spring Boot 3
+- MySQL, JPA/Hibernate
+- Maven
+
+## 📦 Setup
+
+1. Clone the repo
+2. Configure your database in `src/main/resources/application.properties`
+3. Build and run:
+   ```sh
+   mvn spring-boot:run
+   ```
+
+## 📚 Usage
+
+- Access API endpoints at `http://localhost:8080/api/...`
+- See the [API documentation](docs/api.md) for details
+
+## 🤝 Contributing
+
+Pull requests welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## 📄 License
+
+MIT
 
 ---
 
@@ -165,6 +218,7 @@ A full-featured RESTful API for managing a grocery store, built with Java, Sprin
 
 ---
 
+<<<<<<< HEAD
 ## Features
 - Manage Products, Categories, Customers, Orders, and Order Items
 - Full CRUD operations for all entities
@@ -306,6 +360,7 @@ MIT
 For questions or support, open an issue or contact khyathivardhan18@gmail.com.
 =======
 ---
+>>>>>>> 5cf1cfa (Add professional, beginner-friendly Database Setup section)
 
 ## Sample application.properties for MySQL
 ```properties
