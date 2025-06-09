@@ -121,7 +121,7 @@ curl -X POST http://localhost:8080/products \
 | ├── `schema.sql`                      | SQL script that creates the database tables                                              |
 | `pom.xml`                             | The "recipe" for building your project (lists dependencies and plugins)                  |
 | `README.md`                           | This documentation file                                                                 |
-| `docs/IMG_4486.jpeg`                  | Your architecture diagram image                                                          |
+| `docs/architecture.png`               | Your architecture diagram image                                                          |
 
 ## 📝 License
 
