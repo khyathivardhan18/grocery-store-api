@@ -19,9 +19,7 @@ A modern, scalable REST API for managing a grocery store, built with Java Spring
 
 The following diagram illustrates the high-level architecture of the Grocery Store API MVP:
 
-<p align="center">
-  <img src="docs/IMG_4486.jpeg" alt="System Architecture Diagram" width="600"/>
-</p>
+![System Architecture Diagram](docs/architecture.png)
 
 **Key Components:**
 - **Frontend Web/Mobile:** User interfaces for customers and admins.
