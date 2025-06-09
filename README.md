@@ -68,7 +68,7 @@ This API is the backend for a grocery store management system. It allows you to:
 - MySQL Server (running on localhost:3306)
 
 ### Database Setup
-1. Create a database named `grocery_store` (or let the app create it for you).
+1. Create a database named `grocery_store`.
 2. Update your MySQL username and password in `src/main/resources/application.properties` if needed.
 3. The schema and sample data will be initialized automatically from `src/main/resources/schema.sql` and the DataInitializer class.
 
