@@ -106,6 +106,50 @@ When you run the app, it will automatically create all necessary tables (product
   SELECT * FROM products;
   ```
 
+## Project Code Overview
+
+Below is a simple explanation of the main folders and files in your project:
+
+| Path/Folder                          | What it is / What it does                                                                 |
+|-------------------------------------- |------------------------------------------------------------------------------------------|
+| `src/main/java/com/grocerystore/`     | Main Java source code for your application                                               |
+| ├── `controller/`                     | Handles incoming requests (like "show me all products") and sends responses              |
+| ├── `model/`                          | Defines what a Product, Category, Customer, etc. look like (the "shapes" of your data)   |
+| ├── `repository/`                     | Talks to the database to save, update, or get information                                |
+| ├── `config/`                         | Configuration and code that runs when the app starts (like adding sample data)           |
+| `src/main/resources/`                 | Configuration files and database setup scripts                                           |
+| ├── `application.properties`          | Where you put your database username, password, and other settings                      |
+| ├── `schema.sql`                      | SQL script that creates the database tables                                              |
+| `pom.xml`                             | The "recipe" for building your project (lists dependencies and plugins)                  |
+| `README.md`                           | This documentation file                                                                 |
+| `docs/IMG_4486.jpeg`                  | Your architecture diagram image                                                          |
+
+---
+
+### Example: What happens when you visit `/products`?
+
+1. **Controller**: The `ProductController` receives the request.
+2. **Service** (if present): Handles business logic (e.g., checks if a product exists).
+3. **Repository**: Talks to the database to get the list of products.
+4. **Model**: Each product is represented as a `Product` object.
+5. **Response**: The controller sends the list of products back to your browser or app.
+
+---
+
+### How does the code connect to the database?
+
+- The `application.properties` file tells the app how to connect to MySQL.
+- The `repository` classes use Spring Data JPA to talk to the database.
+- The `schema.sql` file sets up the tables the first time you run the app.
+
+---
+
+### Where do I add new features?
+
+- **New API endpoint?** Add a new method in a controller (e.g., `ProductController`).
+- **New type of data?** Add a new class in `model/` and a new repository in `repository/`.
+- **Change database settings?** Edit `application.properties`.
+
 ---
 
 ## Architecture Diagram
