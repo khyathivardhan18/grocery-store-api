@@ -300,14 +300,6 @@ The API will be available at `http://localhost:8080`.
 
 ---
 
-## Can I help or ask questions?
-
-Absolutely!  
-- You can suggest improvements or ask questions by opening an issue on GitHub.
-- Or email: vardhaninturi@gmail.com
-
----
-
 ## License
 
 MIT — you can use this code for free, even in commercial projects.
