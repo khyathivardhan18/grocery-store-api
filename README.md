@@ -201,7 +201,6 @@ The API will be available at `http://localhost:8080`.
 ## API Endpoints
 =======
 ## API Endpoints (What can you ask the API to do?)
->>>>>>> 5cf1cfa (Add professional, beginner-friendly Database Setup section)
 
 ### Products
 - `GET    /products`         - List all products
@@ -317,7 +316,6 @@ MIT — you can use this code for free, even in commercial projects.
 For questions or support, open an issue or contact khyathivardhan18@gmail.com.
 =======
 ---
->>>>>>> 5cf1cfa (Add professional, beginner-friendly Database Setup section)
 
 ## Sample application.properties for MySQL
 ```properties
