@@ -165,7 +165,6 @@ A full-featured RESTful API for managing a grocery store, built with Java, Sprin
 
 ---
 
-<<<<<<< HEAD
 ## Features
 - Manage Products, Categories, Customers, Orders, and Order Items
 - Full CRUD operations for all entities
@@ -304,7 +303,6 @@ The API will be available at `http://localhost:8080`.
 
 MIT — you can use this code for free, even in commercial projects.
 
-<<<<<<< HEAD
 For questions or support, open an issue or contact khyathivardhan18@gmail.com.
 =======
 ---
